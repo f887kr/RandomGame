@@ -1,0 +1,9 @@
+<h1>결과입니다.</h1>
+신이 <%= @name %>을(를) 만들 때 <br>
+<% @result.each_with_index do |r, index| %>
+    <% if index != 2 %>
+      <%= r %> <%= @spoons[index] %> 스푼 <br>
+    <% else %>
+      <%= r %> 와아아아아아아앙 <br>
+    <% end %>
+<% end %>
